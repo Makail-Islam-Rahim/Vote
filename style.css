@@ -244,3 +244,9 @@ input:focus{border-color:#ffffff33}
   #questionTitle{font-size:28px}
   .btn-zone{gap:16px}
 }
+.global-footer{
+  text-align:center;
+  padding:14px 0 22px;
+  color:var(--muted);
+  font-size:14px;
+}
