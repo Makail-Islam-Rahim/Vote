@@ -1,0 +1,104 @@
+<!doctype html>
+<html lang="bn">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>ভোটের দাওয়াত 🇧🇩</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+  <div class="bg-gradient" aria-hidden="true"></div>
+  <div class="bg-dots" aria-hidden="true"></div>
+
+  <main class="wrap">
+
+    <!-- GENERATOR -->
+    <section id="generator" class="card">
+      <header class="head">
+        <div class="badge">ভোটের দাওয়াত</div>
+        <h1>চলো একসাথে ভোট দিতে যাই? 🗳️😄</h1>
+        <p class="muted">ফ্রেন্ড/পার্টনারকে মজা করে ভোটের রিমাইন্ডার পাঠাও 💌</p>
+      </header>
+
+      <div class="form">
+        <label>
+          <span>তোমার নাম</span>
+          <input id="fromInput" type="text" placeholder="" />
+        </label>
+
+        <label>
+          <span>তার নাম</span>
+          <input id="toInput" type="text" placeholder="" />
+        </label>
+
+        <div class="actions">
+          <button id="createBtn" class="btn primary">✨ লিংক বানাও</button>
+          <button id="previewBtn" class="btn">প্রিভিউ</button>
+        </div>
+
+        <div id="linkBox" class="linkbox hidden">
+          <div class="row">
+            <span class="muted">লিংক কপি করো:</span>
+          </div>
+          <div class="row copyrow">
+            <input id="linkOut" type="text" readonly />
+            <button id="copyBtn" class="btn small">কপি</button>
+          </div>
+          <div id="copyToast" class="toast hidden">কপি হয়েছে ✅</div>
+          <div class="hint muted">লিংক ওপেন করলে সরাসরি প্রশ্ন পেজ ✅</div>
+        </div>
+      </div>
+
+      <footer class="foot">
+        <small>Developed by <strong>Makail</strong></small>
+      </footer>
+    </section>
+
+    <!-- QUESTION (2nd page) -->
+    <section id="question" class="card hidden">
+      <div class="question-top">
+        <div class="chip" id="namesChip"></div>
+        <h2 id="questionTitle"></h2>
+        <p class="muted" id="loveFrom"></p>
+      </div>
+
+      <div class="stage" id="stage">
+        <div class="btn-zone" id="zone">
+          <button id="yesBtn" class="btn yes big">
+            হ্যাঁ 😎
+          </button>
+
+          <button id="noBtn" class="btn no big locked" aria-disabled="true">
+            না 🙄
+          </button>
+        </div>
+
+        <div class="lock" id="lockText">
+          “না” আনলক হবে <span id="sec">5</span> সেকেন্ডে ⏳
+        </div>
+      </div>
+
+      <div class="actions center">
+        <button id="backBtn" class="btn small">← ফিরে যাও</button>
+      </div>
+
+      <div class="hint muted">শুধু মজার জন্য ✅ (কোনো দল/প্রার্থী নয়)</div>
+    </section>
+
+    <!-- YAY (3rd page) -->
+    <section id="yay" class="card hidden">
+      <h2 class="yayTitle">আমরাই পারবো নতুন বাংলাদেশ গড়তে </h2>
+      <p class="yayText">চলো! ভোট দিয়ে তারপর ফুচকা/চা 😋</p>
+
+      <div class="actions center">
+        <button id="yayBackBtn" class="btn">← ফিরে যাও</button>
+        <button id="againBtn" class="btn primary">আরেকটা লিংক বানাও</button>
+      </div>
+    </section>
+
+  </main>
+
+  <script src="app.js"></script>
+</body>
+</html>
